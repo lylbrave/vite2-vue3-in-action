@@ -1,11 +1,16 @@
-import { createApp } from "vue";
+import {
+  createApp
+} from "vue";
 import App from "./App.vue";
 
 // 全局样式
 import "styles/index.scss";
-
+import '../theme/index.css'
 // element3
 import element3 from "plugins/element3";
+import {
+  ElIcon
+} from 'element-plus';
 
 // router
 import router from "/@/router";
@@ -14,7 +19,9 @@ import router from "/@/router";
 import store from "/@/store";
 
 // i18n
-import { createI18n } from "vue-i18n";
+import {
+  createI18n
+} from "vue-i18n";
 import messages from "@intlify/vite-plugin-vue-i18n/messages";
 const i18n = createI18n({
   legacy: false,
